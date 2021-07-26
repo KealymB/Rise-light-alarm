@@ -1,0 +1,24 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"34 C:\Users\kealy\MPLABXProjects\LED_BLINK.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"7675 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[v _RB0 RB0 `VEb  1 e 0 @104 ]
+"8041
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1128 ]
+"34 C:\Users\kealy\MPLABXProjects\LED_BLINK.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"43
+} 0

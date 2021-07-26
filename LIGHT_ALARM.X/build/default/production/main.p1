@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"72 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
+"74 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 74: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "8041 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 8041: extern volatile __bit TRISB0 __attribute__((address(0x468)));
@@ -21,25 +21,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 "374
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"10 main.c
-[; ;main.c: 10: void ADC2TIME();
-[v _ADC2TIME `(v ~T0 @X0 0 e? ]
-"7675 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+"7675
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 7675: extern volatile __bit RB0 __attribute__((address(0x68)));
 [v _RB0 `Vb ~T0 @X0 0 e@104 ]
 [v F2428 `(v ~T0 @X0 1 tf1`ul ]
 "92 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
 [v __delay `JF2428 ~T0 @X0 0 e ]
 [p i __delay ]
-"40 main.c
-[; ;main.c: 40:     uint16_t potValue = ADC_GetConversion(pot);
-[c E2491 2 29 30 31 .. ]
-[n E2491 . pot channel_Temp channel_DAC channel_FVR  ]
-"288 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 288: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E2491 ]
+"13 main.c
+[; ;main.c: 13: int BIT2SECMIN(uint8_t time);
+[v _BIT2SECMIN `(i ~T0 @X0 0 ef1`uc ]
+"37 ./mcc_generated_files/drivers/i2c_simple_master.h
+[; ;./mcc_generated_files/drivers/i2c_simple_master.h: 37: uint8_t i2c_read1ByteRegister(i2c1_address_t address, uint8_t reg);
+[v _i2c_read1ByteRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
+"14 main.c
+[; ;main.c: 14: int BIT2HOUR(uint8_t time);
+[v _BIT2HOUR `(i ~T0 @X0 0 ef1`uc ]
 "111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"53 main.c
+[; ;main.c: 53:     uint16_t potValue = ADC_GetConversion(pot);
+[c E2881 2 29 30 31 .. ]
+[n E2881 . pot channel_Temp channel_DAC channel_FVR  ]
+"288 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 288: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E2881 ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -515,84 +521,157 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6748: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"12 main.c
-[; ;main.c: 12: void main(void)
+"16 main.c
+[; ;main.c: 16: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"13
-[; ;main.c: 13: {
+"17
+[; ;main.c: 17: {
 {
 [e :U _main ]
 [f ]
-"14
-[; ;main.c: 14:     SYSTEM_Initialize();
+"18
+[; ;main.c: 18:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"16
-[; ;main.c: 16:     TRISB0 = 0;
+"20
+[; ;main.c: 20:     TRISB0 = 0;
 [e = _TRISB0 -> -> 0 `i `b ]
-"19
-[; ;main.c: 19:     (INTCONbits.GIE = 1);
+"23
+[; ;main.c: 23:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"22
-[; ;main.c: 22:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"24
-[; ;main.c: 24:     while (1)
-[e :U 362 ]
-"25
-[; ;main.c: 25:     {
-{
 "26
-[; ;main.c: 26:         ADC2TIME();
-[e ( _ADC2TIME ..  ]
-"27
-[; ;main.c: 27:         RB0 = 1;
-[e = _RB0 -> -> 1 `i `b ]
+[; ;main.c: 26:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
 "28
-[; ;main.c: 28:         _delay((unsigned long)((1000)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;main.c: 28:     while (1)
+[e :U 362 ]
 "29
-[; ;main.c: 29:         RB0 = 0;
-[e = _RB0 -> -> 0 `i `b ]
-"30
-[; ;main.c: 30:         ADC2TIME();
-[e ( _ADC2TIME ..  ]
+[; ;main.c: 29:     {
+{
 "31
-[; ;main.c: 31:         _delay((unsigned long)((1000)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;main.c: 31:         RB0 = 1;
+[e = _RB0 -> -> 1 `i `b ]
 "32
-[; ;main.c: 32:     }
+[; ;main.c: 32:         _delay((unsigned long)((500)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"33
+[; ;main.c: 33:         RB0 = 0;
+[e = _RB0 -> -> 0 `i `b ]
+"35
+[; ;main.c: 35:         _delay((unsigned long)((500)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"38
+[; ;main.c: 38:         int seconds = BIT2SECMIN(i2c_read1ByteRegister(0b1101000, 0x00));
+[v _seconds `i ~T0 @X0 1 a ]
+[e = _seconds ( _BIT2SECMIN (1 ( _i2c_read1ByteRegister (2 , -> -> 104 `i `uc -> -> 0 `i `uc ]
+"39
+[; ;main.c: 39:         int minutes = BIT2SECMIN(i2c_read1ByteRegister(0b1101000, 0x01));
+[v _minutes `i ~T0 @X0 1 a ]
+[e = _minutes ( _BIT2SECMIN (1 ( _i2c_read1ByteRegister (2 , -> -> 104 `i `uc -> -> 1 `i `uc ]
+"40
+[; ;main.c: 40:         int hours = BIT2HOUR(i2c_read1ByteRegister(0b1101000, 0x02));
+[v _hours `i ~T0 @X0 1 a ]
+[e = _hours ( _BIT2HOUR (1 ( _i2c_read1ByteRegister (2 , -> -> 104 `i `uc -> -> 2 `i `uc ]
+"42
+[; ;main.c: 42:         printf("Seconds: %d\r\n", seconds);
+[e ( _printf , (. :s 1C _seconds ]
+"43
+[; ;main.c: 43:         printf("Minutes: %d\r\n", minutes);
+[e ( _printf , (. :s 2C _minutes ]
+"44
+[; ;main.c: 44:         printf("Hours: %d\r\n", hours);
+[e ( _printf , (. :s 3C _hours ]
+"45
+[; ;main.c: 45:     }
 }
 [e :U 361 ]
 [e $U 362  ]
 [e :U 363 ]
-"33
-[; ;main.c: 33: }
+"46
+[; ;main.c: 46: }
 [e :UE 360 ]
 }
-"35
-[; ;main.c: 35: void ADC2TIME(){
+"48
+[; ;main.c: 48: void ADC2TIME(){
 [v _ADC2TIME `(v ~T0 @X0 1 ef ]
 {
 [e :U _ADC2TIME ]
 [f ]
-"40
-[; ;main.c: 40:     uint16_t potValue = ADC_GetConversion(pot);
+"53
+[; ;main.c: 53:     uint16_t potValue = ADC_GetConversion(pot);
 [v _potValue `us ~T0 @X0 1 a ]
-[e = _potValue ( _ADC_GetConversion (1 . `E2491 0 ]
-"42
-[; ;main.c: 42:     int hours = potValue/(9.9*4);
+[e = _potValue ( _ADC_GetConversion (1 . `E2881 0 ]
+"55
+[; ;main.c: 55:     int hours = potValue/(9.9*4);
 [v _hours `i ~T0 @X0 1 a ]
 [e = _hours -> / -> -> _potValue `ui `d * .9.9 -> -> 4 `i `d `i ]
-"43
-[; ;main.c: 43:     int min = (potValue/(9.9*24))*15;
+"56
+[; ;main.c: 56:     int min = potValue/(9.9*24)*15;
 [v _min `i ~T0 @X0 1 a ]
 [e = _min -> * / -> -> _potValue `ui `d * .9.9 -> -> 24 `i `d -> -> 15 `i `d `i ]
-"45
-[; ;main.c: 45:     printf("Pot value: %dH%dM\r\n", hours, min);
-[e ( _printf , , (. :s 1C _hours _min ]
-"46
-[; ;main.c: 46: }
+"58
+[; ;main.c: 58:     printf("Pot value: %dH%dM\r\n", hours, min);
+[e ( _printf , , (. :s 4C _hours _min ]
+"59
+[; ;main.c: 59: }
 [e :UE 364 ]
 }
+"61
+[; ;main.c: 61: int BIT2SECMIN(uint8_t time){
+[v _BIT2SECMIN `(i ~T0 @X0 1 ef1`uc ]
+{
+[e :U _BIT2SECMIN ]
+[v _time `uc ~T0 @X0 1 r1 ]
+[f ]
+"62
+[; ;main.c: 62:     uint8_t timeReturn = 0;
+[v _timeReturn `uc ~T0 @X0 1 a ]
+[e = _timeReturn -> -> 0 `i `uc ]
+"63
+[; ;main.c: 63:     uint8_t H = time;
+[v _H `uc ~T0 @X0 1 a ]
+[e = _H _time ]
+"65
+[; ;main.c: 65:     H &= 0b01110000;
+[e =& _H -> -> 112 `i `uc ]
+"67
+[; ;main.c: 67:     timeReturn += (H>>4) * 10;
+[e =+ _timeReturn -> * >> -> _H `i -> 4 `i -> 10 `i `uc ]
+"69
+[; ;main.c: 69:     return timeReturn + (time & 0b00001111);
+[e ) + -> _timeReturn `i & -> _time `i -> 15 `i ]
+[e $UE 365  ]
+"70
+[; ;main.c: 70: }
+[e :UE 365 ]
+}
+"72
+[; ;main.c: 72: int BIT2HOUR(uint8_t time){
+[v _BIT2HOUR `(i ~T0 @X0 1 ef1`uc ]
+{
+[e :U _BIT2HOUR ]
+[v _time `uc ~T0 @X0 1 r1 ]
+[f ]
+"73
+[; ;main.c: 73:     uint8_t timeReturn = 0;
+[v _timeReturn `uc ~T0 @X0 1 a ]
+[e = _timeReturn -> -> 0 `i `uc ]
+"74
+[; ;main.c: 74:     uint8_t H = time;
+[v _H `uc ~T0 @X0 1 a ]
+[e = _H _time ]
+"76
+[; ;main.c: 76:     timeReturn = H&0b00010000 * 10;
+[e = _timeReturn -> & -> _H `i * -> 16 `i -> 10 `i `uc ]
+"78
+[; ;main.c: 78:     return timeReturn + (time & 0b00000111);
+[e ) + -> _timeReturn `i & -> _time `i -> 7 `i ]
+[e $UE 366  ]
+"79
+[; ;main.c: 79: }
+[e :UE 366 ]
+}
 [p f _printf 8388736 ]
-[a 1C 80 111 116 32 118 97 108 117 101 58 32 37 100 72 37 100 77 13 10 0 ]
+[a 3C 72 111 117 114 115 58 32 37 100 13 10 0 ]
+[a 2C 77 105 110 117 116 101 115 58 32 37 100 13 10 0 ]
+[a 1C 83 101 99 111 110 100 115 58 32 37 100 13 10 0 ]
+[a 4C 80 111 116 32 118 97 108 117 101 58 32 37 100 72 37 100 77 13 10 0 ]

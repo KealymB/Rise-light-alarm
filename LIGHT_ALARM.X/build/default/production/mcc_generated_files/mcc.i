@@ -4243,9 +4243,9 @@ extern __bank0 __bit __timeout;
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 140 "mcc_generated_files/pin_manager.h"
+# 150 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 152 "mcc_generated_files/pin_manager.h"
+# 162 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -4584,6 +4584,30 @@ void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr);
 void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr);
 # 56 "mcc_generated_files/mcc.h" 2
 
+# 1 "mcc_generated_files/pwm3.h" 1
+# 97 "mcc_generated_files/pwm3.h"
+void PWM3_Initialize(void);
+# 124 "mcc_generated_files/pwm3.h"
+void PWM3_LoadDutyValue(uint16_t dutyValue);
+# 57 "mcc_generated_files/mcc.h" 2
+
+# 1 "mcc_generated_files/tmr2.h" 1
+# 103 "mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 132 "mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 164 "mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 199 "mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 238 "mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 290 "mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 325 "mcc_generated_files/tmr2.h"
+_Bool TMR2_HasOverflowOccured(void);
+# 58 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/adc.h" 1
 # 72 "mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
@@ -4618,7 +4642,7 @@ adc_result_t ADC_GetConversionResult(void);
 adc_result_t ADC_GetConversion(adc_channel_t channel);
 # 316 "mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
-# 57 "mcc_generated_files/mcc.h" 2
+# 59 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/eusart.h" 1
 # 76 "mcc_generated_files/eusart.h"
@@ -4673,7 +4697,7 @@ void EUSART_SetErrorHandler(void (* interruptHandler)(void));
 void EUSART_SetTxInterruptHandler(void (* interruptHandler)(void));
 # 506 "mcc_generated_files/eusart.h"
 void EUSART_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 58 "mcc_generated_files/mcc.h" 2
+# 60 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/drivers/i2c_simple_master.h" 1
 # 37 "mcc_generated_files/drivers/i2c_simple_master.h"
@@ -4685,12 +4709,12 @@ void i2c_write2ByteRegister(i2c1_address_t address, uint8_t reg, uint16_t data);
 void i2c_writeNBytes(i2c1_address_t address, void* data, size_t len);
 void i2c_readDataBlock(i2c1_address_t address, uint8_t reg, void *data, size_t len);
 void i2c_readNBytes(i2c1_address_t address, void *data, size_t len);
-# 59 "mcc_generated_files/mcc.h" 2
-# 74 "mcc_generated_files/mcc.h"
+# 61 "mcc_generated_files/mcc.h" 2
+# 76 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 87 "mcc_generated_files/mcc.h"
+# 89 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 99 "mcc_generated_files/mcc.h"
+# 101 "mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
 # 47 "mcc_generated_files/mcc.c" 2
 
@@ -4704,6 +4728,8 @@ void SYSTEM_Initialize(void)
     OSCILLATOR_Initialize();
     WDT_Initialize();
     ADC_Initialize();
+    PWM3_Initialize();
+    TMR2_Initialize();
     EUSART_Initialize();
 }
 

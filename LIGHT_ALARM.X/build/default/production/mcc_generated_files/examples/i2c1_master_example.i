@@ -362,10 +362,7 @@ uint8_t I2C1_Read1ByteRegister(i2c1_address_t address, uint8_t reg)
 {
     uint8_t returnValue = 0x00;
 
-
-
     while(!I2C1_Open(address));
-
     I2C1_SetDataCompleteCallback(rd1RegCompleteHandler,&returnValue);
     I2C1_SetBuffer(&reg,1);
     I2C1_SetAddressNackCallback(((void*)0),((void*)0));

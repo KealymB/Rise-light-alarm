@@ -1,18 +1,24 @@
 Version 4.0 HI-TECH Software Intermediate Code
 "89 mcc_generated_files/drivers/.././i2c1_master.h
 [v _I2C1_Initialize `(v ~T0 @X0 0 ef ]
-"140 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 140: void PIN_MANAGER_Initialize (void);
+"150 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 150: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"87 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 87: void OSCILLATOR_Initialize(void);
+"89 mcc_generated_files/mcc.h
+[; ;mcc_generated_files/mcc.h: 89: void OSCILLATOR_Initialize(void);
 [v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"99
-[; ;mcc_generated_files/mcc.h: 99: void WDT_Initialize(void);
+"101
+[; ;mcc_generated_files/mcc.h: 101: void WDT_Initialize(void);
 [v _WDT_Initialize `(v ~T0 @X0 0 ef ]
 "136 mcc_generated_files/adc.h
 [; ;mcc_generated_files/adc.h: 136: void ADC_Initialize(void);
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
+"97 mcc_generated_files/pwm3.h
+[; ;mcc_generated_files/pwm3.h: 97: void PWM3_Initialize(void);
+[v _PWM3_Initialize `(v ~T0 @X0 0 ef ]
+"103 mcc_generated_files/tmr2.h
+[; ;mcc_generated_files/tmr2.h: 103: void TMR2_Initialize(void);
+[v _TMR2_Initialize `(v ~T0 @X0 0 ef ]
 "118 mcc_generated_files/eusart.h
 [; ;mcc_generated_files/eusart.h: 118: void EUSART_Initialize(void);
 [v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
@@ -529,60 +535,66 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/mcc.c: 57:     ADC_Initialize();
 [e ( _ADC_Initialize ..  ]
 "58
-[; ;mcc_generated_files/mcc.c: 58:     EUSART_Initialize();
-[e ( _EUSART_Initialize ..  ]
+[; ;mcc_generated_files/mcc.c: 58:     PWM3_Initialize();
+[e ( _PWM3_Initialize ..  ]
 "59
-[; ;mcc_generated_files/mcc.c: 59: }
+[; ;mcc_generated_files/mcc.c: 59:     TMR2_Initialize();
+[e ( _TMR2_Initialize ..  ]
+"60
+[; ;mcc_generated_files/mcc.c: 60:     EUSART_Initialize();
+[e ( _EUSART_Initialize ..  ]
+"61
+[; ;mcc_generated_files/mcc.c: 61: }
 [e :UE 359 ]
 }
-"61
-[; ;mcc_generated_files/mcc.c: 61: void OSCILLATOR_Initialize(void)
+"63
+[; ;mcc_generated_files/mcc.c: 63: void OSCILLATOR_Initialize(void)
 [v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
-"62
-[; ;mcc_generated_files/mcc.c: 62: {
+"64
+[; ;mcc_generated_files/mcc.c: 64: {
 {
 [e :U _OSCILLATOR_Initialize ]
 [f ]
-"64
-[; ;mcc_generated_files/mcc.c: 64:     OSCCON = 0x70;
-[e = _OSCCON -> -> 112 `i `uc ]
 "66
-[; ;mcc_generated_files/mcc.c: 66:     OSCTUNE = 0x00;
-[e = _OSCTUNE -> -> 0 `i `uc ]
+[; ;mcc_generated_files/mcc.c: 66:     OSCCON = 0x70;
+[e = _OSCCON -> -> 112 `i `uc ]
 "68
-[; ;mcc_generated_files/mcc.c: 68:     BORCON = 0x00;
-[e = _BORCON -> -> 0 `i `uc ]
+[; ;mcc_generated_files/mcc.c: 68:     OSCTUNE = 0x00;
+[e = _OSCTUNE -> -> 0 `i `uc ]
 "70
-[; ;mcc_generated_files/mcc.c: 70:     while(PLLR == 0)
+[; ;mcc_generated_files/mcc.c: 70:     BORCON = 0x00;
+[e = _BORCON -> -> 0 `i `uc ]
+"72
+[; ;mcc_generated_files/mcc.c: 72:     while(PLLR == 0)
 [e $U 361  ]
 [e :U 362 ]
-"71
-[; ;mcc_generated_files/mcc.c: 71:     {
+"73
+[; ;mcc_generated_files/mcc.c: 73:     {
 {
-"72
-[; ;mcc_generated_files/mcc.c: 72:     }
+"74
+[; ;mcc_generated_files/mcc.c: 74:     }
 }
 [e :U 361 ]
-"70
-[; ;mcc_generated_files/mcc.c: 70:     while(PLLR == 0)
+"72
+[; ;mcc_generated_files/mcc.c: 72:     while(PLLR == 0)
 [e $ == -> _PLLR `i -> 0 `i 362  ]
 [e :U 363 ]
-"73
-[; ;mcc_generated_files/mcc.c: 73: }
+"75
+[; ;mcc_generated_files/mcc.c: 75: }
 [e :UE 360 ]
 }
-"75
-[; ;mcc_generated_files/mcc.c: 75: void WDT_Initialize(void)
+"77
+[; ;mcc_generated_files/mcc.c: 77: void WDT_Initialize(void)
 [v _WDT_Initialize `(v ~T0 @X0 1 ef ]
-"76
-[; ;mcc_generated_files/mcc.c: 76: {
+"78
+[; ;mcc_generated_files/mcc.c: 78: {
 {
 [e :U _WDT_Initialize ]
 [f ]
-"78
-[; ;mcc_generated_files/mcc.c: 78:     WDTCON = 0x16;
+"80
+[; ;mcc_generated_files/mcc.c: 80:     WDTCON = 0x16;
 [e = _WDTCON -> -> 22 `i `uc ]
-"79
-[; ;mcc_generated_files/mcc.c: 79: }
+"81
+[; ;mcc_generated_files/mcc.c: 81: }
 [e :UE 364 ]
 }

@@ -17,20 +17,6 @@ I2C1_NOERR 0
 I2C1_BUSY 1
 I2C1_FAIL 2
 ]
-"69 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
-[e E355 . `uc
-I2C1_NOERR 0
-I2C1_BUSY 1
-I2C1_FAIL 2
-]
-"71
-[e E360 . `uc
-I2C1_STOP 1
-I2C1_RESTART_READ 2
-I2C1_RESTART_WRITE 3
-I2C1_CONTINUE 4
-I2C1_RESET_LINK 5
-]
 "85 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/adc.c
 [e E2476 . `uc
 pot 2
@@ -79,12 +65,26 @@ I2C1_DATA_NACK 3
 I2C1_TIMEOUT 4
 I2C1_NULL 5
 ]
-"53 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
-[e E2881 . `uc
+"90 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
+[e E2893 . `uc
 pot 2
 channel_Temp 29
 channel_DAC 30
 channel_FVR 31
+]
+"67 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
+[e E355 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"68
+[e E360 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
 ]
 "1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
@@ -126,11 +126,11 @@ channel_FVR 31
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"16 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
+"27 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"61
+"98
 [v _BIT2SECMIN BIT2SECMIN `(i  1 e 2 0 ]
-"72
+"109
 [v _BIT2HOUR BIT2HOUR `(i  1 e 2 0 ]
 "67 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -178,16 +178,16 @@ channel_FVR 31
 [v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
 "289
 [v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
-"145 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
-[v _rd1RegCompleteHandler@i2c1_master_example$F143 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
-"152
-[v _rd2RegCompleteHandler@i2c1_master_example$F154 rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
-"159
-[v _wr1RegCompleteHandler@i2c1_master_example$F160 wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
-"166
-[v _wr2RegCompleteHandler@i2c1_master_example$F166 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
-"173
-[v _rdBlkRegCompleteHandler@i2c1_master_example$F177 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
+"142 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rd1RegCompleteHandler@i2c1_master_example$F1361 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
+"149
+[v _rd2RegCompleteHandler@i2c1_master_example$F1372 rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
+"156
+[v _wr1RegCompleteHandler@i2c1_master_example$F1378 wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
+"163
+[v _wr2RegCompleteHandler@i2c1_master_example$F1384 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
+"170
+[v _rdBlkRegCompleteHandler@i2c1_master_example$F1395 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
 "167 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 "176
@@ -288,13 +288,19 @@ channel_FVR 31
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 "50 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"61
+"63
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"75
+"77
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 "55 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-[s S303 . 1 `uc 1 IOCIF 1 0 :1:0 
+"64 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+"62 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+[s S201 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -304,14 +310,14 @@ channel_FVR 31
 `uc 1 GIE 1 0 :1:7 
 ]
 "374 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
-[s S312 . 1 `uc 1 . 1 0 :2:0 
+[s S210 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S317 . 1 `S303 1 . 1 0 `S312 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES317  1 e 1 @11 ]
-[s S356 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S215 . 1 `S201 1 . 1 0 `S210 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES215  1 e 1 @11 ]
+[s S254 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -321,9 +327,9 @@ channel_FVR 31
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "570
-[u S365 . 1 `S356 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES365  1 e 1 @17 ]
-[s S1011 . 1 `uc 1 CCP2IF 1 0 :1:0 
+[u S263 . 1 `S254 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES263  1 e 1 @17 ]
+[s S917 . 1 `uc 1 CCP2IF 1 0 :1:0 
 `uc 1 . 1 0 :2:1 
 `uc 1 BCL1IF 1 0 :1:3 
 `uc 1 EEIF 1 0 :1:4 
@@ -332,13 +338,34 @@ channel_FVR 31
 `uc 1 OSFIF 1 0 :1:7 
 ]
 "631
-[u S1019 . 1 `S1011 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES1019  1 e 1 @18 ]
+[u S925 . 1 `S917 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES925  1 e 1 @18 ]
+"941
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"961
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"981
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S1302 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"1002
+[s S1310 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S1314 . 1 `S1302 1 . 1 0 `S1310 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1314  1 e 1 @28 ]
 "1152
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1214
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
-[s S335 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S233 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -348,9 +375,9 @@ channel_FVR 31
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1293
-[u S344 . 1 `S335 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES344  1 e 1 @145 ]
-[s S450 . 1 `uc 1 PS0 1 0 :1:0 
+[u S242 . 1 `S233 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES242  1 e 1 @145 ]
+[s S356 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 PSA 1 0 :1:3 
@@ -360,13 +387,13 @@ channel_FVR 31
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "1478
-[s S459 . 1 `uc 1 PS 1 0 :3:0 
+[s S365 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S464 . 1 `S450 1 . 1 0 `S459 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES464  1 e 1 @149 ]
+[u S370 . 1 `S356 1 . 1 0 `S365 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES370  1 e 1 @149 ]
 "1589
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
 "1648
@@ -379,7 +406,7 @@ channel_FVR 31
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
 "1887
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
-[s S242 . 1 `uc 1 ADON 1 0 :1:0 
+[s S140 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -388,15 +415,15 @@ channel_FVR 31
 `uc 1 CHS4 1 0 :1:6 
 ]
 "1912
-[s S250 . 1 `uc 1 . 1 0 :1:0 
+[s S148 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADGO 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-[s S254 . 1 `uc 1 . 1 0 :1:0 
+[s S152 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[u S257 . 1 `S242 1 . 1 0 `S250 1 . 1 0 `S254 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES257  1 e 1 @157 ]
+[u S155 . 1 `S140 1 . 1 0 `S148 1 . 1 0 `S152 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES155  1 e 1 @157 ]
 "1967
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
 "2039
@@ -423,7 +450,7 @@ channel_FVR 31
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
 "3311
 [v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
-[s S596 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S502 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -433,11 +460,11 @@ channel_FVR 31
 `uc 1 SPEN 1 0 :1:7 
 ]
 "3328
-[u S605 . 1 `S596 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES605  1 e 1 @413 ]
+[u S511 . 1 `S502 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES511  1 e 1 @413 ]
 "3373
 [v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
-[s S574 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S480 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -447,8 +474,8 @@ channel_FVR 31
 `uc 1 CSRC 1 0 :1:7 
 ]
 "3390
-[u S583 . 1 `S574 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES583  1 e 1 @414 ]
+[u S489 . 1 `S480 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES489  1 e 1 @414 ]
 "3435
 [v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
 "3487
@@ -461,7 +488,7 @@ channel_FVR 31
 [v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
 "3700
 [v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
-[s S1030 . 1 `uc 1 BF 1 0 :1:0 
+[s S936 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -471,11 +498,11 @@ channel_FVR 31
 `uc 1 SMP 1 0 :1:7 
 ]
 "3722
-[u S1039 . 1 `S1030 1 . 1 0 ]
-[v _SSP1STATbits SSP1STATbits `VES1039  1 e 1 @532 ]
+[u S945 . 1 `S936 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES945  1 e 1 @532 ]
 "3822
 [v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
-[s S825 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S731 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
@@ -485,13 +512,13 @@ channel_FVR 31
 `uc 1 WCOL 1 0 :1:7 
 ]
 "3851
-[s S834 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S740 . 1 `uc 1 SSPM 1 0 :4:0 
 ]
-[u S836 . 1 `S825 1 . 1 0 `S834 1 . 1 0 ]
-[v _SSP1CON1bits SSP1CON1bits `VES836  1 e 1 @533 ]
+[u S742 . 1 `S731 1 . 1 0 `S740 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES742  1 e 1 @533 ]
 "4026
 [v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
-[s S990 . 1 `uc 1 SEN 1 0 :1:0 
+[s S896 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -501,14 +528,35 @@ channel_FVR 31
 `uc 1 GCEN 1 0 :1:7 
 ]
 "4048
-[u S999 . 1 `S990 1 . 1 0 ]
-[v _SSP1CON2bits SSP1CON2bits `VES999  1 e 1 @534 ]
+[u S905 . 1 `S896 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES905  1 e 1 @534 ]
+[s S1248 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+"5505
+[s S1257 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+[u S1262 . 1 `S1248 1 . 1 0 `S1257 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES1262  1 e 1 @670 ]
+"5577
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5597
+[v _CCPR3H CCPR3H `VEuc  1 e 1 @786 ]
+"5617
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
 "7612
 [v _PLLR PLLR `VEb  1 e 0 @1238 ]
-"7675
-[v _RB0 RB0 `VEb  1 e 0 @104 ]
-"8041
-[v _TRISB0 TRISB0 `VEb  1 e 0 @1128 ]
+"8026
+[v _TRISA3 TRISA3 `VEb  1 e 0 @1123 ]
 "55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _flags flags `i  1 s 2 flags ]
 [v _prec prec `i  1 s 2 prec ]
@@ -517,6 +565,14 @@ channel_FVR 31
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
+"22 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
+[v _alarmFlag alarmFlag `a  1 e 1 0 ]
+"23
+[v _alarmMin alarmMin `i  1 e 2 0 ]
+"24
+[v _alarmHour alarmHour `i  1 e 2 0 ]
+"25
+[v _alarmLength alarmLength `i  1 e 2 0 ]
 "62 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/eusart.c
 [v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
 "63
@@ -531,18 +587,18 @@ channel_FVR 31
 [v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
 "69
 [v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
-[s S494 . 1 `uc 1 perr 1 0 :1:0 
+[s S400 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "70
-[u S499 . 1 `S494 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S499  1 e 8 0 ]
+[u S405 . 1 `S400 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S405  1 e 8 0 ]
 "71
 [v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
 "72
-[v _eusartRxLastError eusartRxLastError `VES499  1 e 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES405  1 e 1 0 ]
 "77
 [v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
 "78
@@ -555,29 +611,35 @@ channel_FVR 31
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
 "146 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `DC[16]*.37(E2861  1 e 32 0 ]
-[s S799 . 29 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.4v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.4uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E2861 1 state 1 26 `E355 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+[s S705 . 29 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.4v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.4uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E2861 1 state 1 26 `E355 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
 `uc 1 busy 1 28 :1:1 
 `uc 1 inUse 1 28 :1:2 
 `uc 1 bufferFree 1 28 :1:3 
 ]
 "165
-[v _I2C1_Status I2C1_Status `S799  1 e 29 0 ]
-"16 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
+[v _I2C1_Status I2C1_Status `S705  1 e 29 0 ]
+"27 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"40
-[v main@hours hours `i  1 a 2 6 ]
-"39
-[v main@minutes minutes `i  1 a 2 4 ]
-"38
-[v main@seconds seconds `i  1 a 2 2 ]
-"46
+"60
+[v main@minutes minutes `i  1 a 2 14 ]
+"61
+[v main@hours hours `i  1 a 2 10 ]
+"59
+[v main@seconds seconds `i  1 a 2 6 ]
+"52
+[v main@brightness brightness `us  1 a 2 12 ]
+"51
+[v main@increment increment `us  1 a 2 8 ]
+"53
+[v main@maxBrightness maxBrightness `us  1 a 2 4 ]
+"83
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.4v  1 a 1 78 ]
+[v printf@ap ap `[1]*.4v  1 a 1 0 ]
 "5
 [v printf@fmt fmt `*.25DCuc  1 p 2 71 ]
 "13
@@ -585,40 +647,40 @@ channel_FVR 31
 "1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S1794 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.1S1794  1 a 1 wreg ]
+[s S1914 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1914  1 a 1 wreg ]
 "1393
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 69 ]
 "1390
-[v vfprintf@fp fp `*.1S1794  1 a 1 wreg ]
+[v vfprintf@fp fp `*.1S1914  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 63 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 65 ]
 "1395
 "1390
-[v vfprintf@fp fp `*.1S1794  1 a 1 68 ]
+[v vfprintf@fp fp `*.1S1914  1 a 1 68 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S1794 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.1S1794  1 a 1 wreg ]
+[s S1914 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1914  1 a 1 wreg ]
 "696
 [v vfpfcnvrt@ll ll `o  1 a 8 54 ]
 "692
-[v vfpfcnvrt@fp fp `*.1S1794  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.1S1914  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 47 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 48 ]
 "702
 "692
-[v vfpfcnvrt@fp fp `*.1S1794  1 a 1 62 ]
+[v vfpfcnvrt@fp fp `*.1S1914  1 a 1 62 ]
 "1387
 } 0
 "287
 [v _dtoa dtoa `(i  1 s 2 dtoa ]
 {
-[s S1794 _IO_FILE 0 ]
-[v dtoa@fp fp `*.1S1794  1 a 1 wreg ]
+[s S1914 _IO_FILE 0 ]
+[v dtoa@fp fp `*.1S1914  1 a 1 wreg ]
 "290
 [v dtoa@n n `o  1 a 8 37 ]
 "289
@@ -627,28 +689,28 @@ channel_FVR 31
 [v dtoa@w w `i  1 a 2 33 ]
 [v dtoa@p p `i  1 a 2 31 ]
 "287
-[v dtoa@fp fp `*.1S1794  1 a 1 wreg ]
+[v dtoa@fp fp `*.1S1914  1 a 1 wreg ]
 [v dtoa@d d `o  1 p 8 17 ]
 "293
 "287
-[v dtoa@fp fp `*.1S1794  1 a 1 30 ]
+[v dtoa@fp fp `*.1S1914  1 a 1 30 ]
 "328
 } 0
 "72
 [v _pad pad `(i  1 s 2 pad ]
 {
-[s S1794 _IO_FILE 0 ]
-[v pad@fp fp `*.1S1794  1 a 1 wreg ]
+[s S1914 _IO_FILE 0 ]
+[v pad@fp fp `*.1S1914  1 a 1 wreg ]
 "74
 [v pad@w w `i  1 a 2 14 ]
 [v pad@i i `i  1 a 2 12 ]
 "72
-[v pad@fp fp `*.1S1794  1 a 1 wreg ]
+[v pad@fp fp `*.1S1914  1 a 1 wreg ]
 [v pad@buf buf `*.5uc  1 p 1 8 ]
 [v pad@p p `i  1 p 2 9 ]
 "77
 "72
-[v pad@fp fp `*.1S1794  1 a 1 16 ]
+[v pad@fp fp `*.1S1914  1 a 1 16 ]
 "95
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
@@ -673,8 +735,8 @@ channel_FVR 31
 [v fputs@c c `uc  1 a 1 4 ]
 "8
 [v fputs@s s `*.5DCuc  1 a 1 wreg ]
-[s S1778 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputs@fp fp `*.1S1778  1 p 1 0 ]
+[s S1898 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.1S1898  1 p 1 0 ]
 "13
 [v fputs@s s `*.5DCuc  1 a 1 7 ]
 "19
@@ -683,8 +745,8 @@ channel_FVR 31
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 4 ]
-[s S1778 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.1S1778  1 p 1 6 ]
+[s S1898 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S1898  1 p 1 6 ]
 "24
 } 0
 "201 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/eusart.c
@@ -926,40 +988,39 @@ channel_FVR 31
 {
 "586
 } 0
-"525
+"170 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rdBlkRegCompleteHandler@i2c1_master_example$F1395 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@i2c1_master_example$F1395@ptr ptr `*.4v  1 p 1 10 ]
+"175
+} 0
+"156
+[v _wr1RegCompleteHandler@i2c1_master_example$F1378 wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@i2c1_master_example$F1378@ptr ptr `*.4v  1 p 1 10 ]
+"161
+} 0
+"149
+[v _rd2RegCompleteHandler@i2c1_master_example$F1372 rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@i2c1_master_example$F1372@ptr ptr `*.4v  1 p 1 10 ]
+"154
+} 0
+"142
+[v _rd1RegCompleteHandler@i2c1_master_example$F1361 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@i2c1_master_example$F1361@ptr ptr `*.4v  1 p 1 10 ]
+"147
+} 0
+"525 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E360  1 e 1 0 ]
 {
-[v I2C1_CallbackReturnReset@funPtr funPtr `*.4v  1 p 1 10 ]
 "528
 } 0
 "520
 [v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E360  1 e 1 0 ]
 {
 "523
-} 0
-"173 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
-[v _rdBlkRegCompleteHandler@i2c1_master_example$F177 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-{
-[v rdBlkRegCompleteHandler@i2c1_master_example$F177@ptr ptr `*.4v  1 p 1 10 ]
-"178
-} 0
-"159
-[v _wr1RegCompleteHandler@i2c1_master_example$F160 wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
-{
-[v wr1RegCompleteHandler@i2c1_master_example$F160@ptr ptr `*.4v  1 p 1 10 ]
-"164
-} 0
-"152
-[v _rd2RegCompleteHandler@i2c1_master_example$F154 rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
-{
-[v rd2RegCompleteHandler@i2c1_master_example$F154@ptr ptr `*.4v  1 p 1 10 ]
-"157
-} 0
-"145
-[v _rd1RegCompleteHandler@i2c1_master_example$F143 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
-{
-[v rd1RegCompleteHandler@i2c1_master_example$F143@ptr ptr `*.4v  1 p 1 10 ]
-"150
 } 0
 "185 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/drivers/i2c_simple_master.c
 [v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
@@ -991,11 +1052,11 @@ channel_FVR 31
 [v wr1RegCompleteHandler@p p `*.4v  1 p 1 10 ]
 "39
 } 0
-"166 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
-[v _wr2RegCompleteHandler@i2c1_master_example$F166 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
+"163 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _wr2RegCompleteHandler@i2c1_master_example$F1384 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 {
-[v wr2RegCompleteHandler@i2c1_master_example$F166@ptr ptr `*.4v  1 p 1 10 ]
-"171
+[v wr2RegCompleteHandler@i2c1_master_example$F1384@ptr ptr `*.4v  1 p 1 10 ]
+"168
 } 0
 "273 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
@@ -1065,22 +1126,32 @@ channel_FVR 31
 "50 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"59
+"61
 } 0
-"75
+"77
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 {
-"79
+"81
+} 0
+"62 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"64 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"80
 } 0
 "55 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "94
 } 0
-"61 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/mcc.c
+"63 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"73
+"75
 } 0
 "167 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
@@ -1127,18 +1198,37 @@ channel_FVR 31
 {
 "83
 } 0
-"61 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
+"82 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/pwm3.c
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM3_LoadDutyValue@dutyValue dutyValue `us  1 p 2 1 ]
+"89
+} 0
+"98 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
 [v _BIT2SECMIN BIT2SECMIN `(i  1 e 2 0 ]
 {
 [v BIT2SECMIN@time time `uc  1 a 1 wreg ]
-"63
+"100
 [v BIT2SECMIN@H H `uc  1 a 1 1 ]
-"62
+"99
 [v BIT2SECMIN@timeReturn timeReturn `uc  1 a 1 0 ]
-"61
+"98
 [v BIT2SECMIN@time time `uc  1 a 1 wreg ]
 [v BIT2SECMIN@time time `uc  1 a 1 2 ]
-"70
+"107
+} 0
+"109
+[v _BIT2HOUR BIT2HOUR `(i  1 e 2 0 ]
+{
+[v BIT2HOUR@time time `uc  1 a 1 wreg ]
+"111
+[v BIT2HOUR@H H `uc  1 a 1 1 ]
+"110
+[v BIT2HOUR@timeReturn timeReturn `uc  1 a 1 0 ]
+"109
+[v BIT2HOUR@time time `uc  1 a 1 wreg ]
+[v BIT2HOUR@time time `uc  1 a 1 2 ]
+"118
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
@@ -1152,19 +1242,6 @@ channel_FVR 31
 "6
 [v ___bmul@multiplier multiplier `uc  1 a 1 4 ]
 "51
-} 0
-"72 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\main.c
-[v _BIT2HOUR BIT2HOUR `(i  1 e 2 0 ]
-{
-[v BIT2HOUR@time time `uc  1 a 1 wreg ]
-"73
-[v BIT2HOUR@timeReturn timeReturn `uc  1 a 1 5 ]
-"74
-[v BIT2HOUR@H H `uc  1 a 1 4 ]
-"72
-[v BIT2HOUR@time time `uc  1 a 1 wreg ]
-[v BIT2HOUR@time time `uc  1 a 1 6 ]
-"79
 } 0
 "52 C:\Users\kealy\OneDrive\Desktop\Projects\RISE\LIGHT_ALARM.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]

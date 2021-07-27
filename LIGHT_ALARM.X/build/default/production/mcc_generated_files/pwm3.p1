@@ -1,51 +1,28 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"76 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 76: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"8026 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 8026: extern volatile __bit TRISA3 __attribute__((address(0x463)));
-[v _TRISA3 `Vb ~T0 @X0 0 e@1123 ]
-"357
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 357:     struct {
-[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
-"367
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 367:     struct {
-[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S32 . . T0IF . T0IE ]
-"356
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 356: typedef union {
-[u S30 `S31 1 `S32 1 ]
-[n S30 . . . ]
-"374
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"124 ./mcc_generated_files/pwm3.h
-[; ;./mcc_generated_files/pwm3.h: 124: void PWM3_LoadDutyValue(uint16_t dutyValue);
-[v _PWM3_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
-"19 main.c
-[; ;main.c: 19: int BIT2SECMIN(uint8_t time);
-[v _BIT2SECMIN `(i ~T0 @X0 0 ef1`uc ]
-"37 ./mcc_generated_files/drivers/i2c_simple_master.h
-[; ;./mcc_generated_files/drivers/i2c_simple_master.h: 37: uint8_t i2c_read1ByteRegister(i2c1_address_t address, uint8_t reg);
-[v _i2c_read1ByteRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
-"20 main.c
-[; ;main.c: 20: int BIT2HOUR(uint8_t time);
-[v _BIT2HOUR `(i ~T0 @X0 0 ef1`uc ]
-"111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-[v F2428 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
-[v __delay `JF2428 ~T0 @X0 0 e ]
-[p i __delay ]
-"90 main.c
-[; ;main.c: 90:     uint16_t potValue = ADC_GetConversion(pot);
-[c E2893 2 29 30 31 .. ]
-[n E2893 . pot channel_Temp channel_DAC channel_FVR  ]
-"288 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 288: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E2893 ]
+"5617 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5617: extern volatile unsigned char CCP3CON __attribute__((address(0x313)));
+[v _CCP3CON `Vuc ~T0 @X0 0 e@787 ]
+"5577
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5577: extern volatile unsigned char CCPR3L __attribute__((address(0x311)));
+[v _CCPR3L `Vuc ~T0 @X0 0 e@785 ]
+"5597
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5597: extern volatile unsigned char CCPR3H __attribute__((address(0x312)));
+[v _CCPR3H `Vuc ~T0 @X0 0 e@786 ]
+"5488
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5488:     struct {
+[s S279 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S279 . C1TSEL0 C1TSEL1 C2TSEL0 C2TSEL1 C3TSEL0 C3TSEL1 C4TSEL0 C4TSEL1 ]
+"5498
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5498:     struct {
+[s S280 :2 `uc 1 :2 `uc 1 :2 `uc 1 :2 `uc 1 ]
+[n S280 . C1TSEL C2TSEL C3TSEL C4TSEL ]
+"5487
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5487: typedef union {
+[u S278 `S279 1 `S280 1 ]
+[n S278 . . . ]
+"5505
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5505: extern volatile CCPTMRS0bits_t CCPTMRS0bits __attribute__((address(0x29E)));
+[v _CCPTMRS0bits `VS278 ~T0 @X0 0 e@670 ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -520,227 +497,50 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6748
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6748: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"22 main.c
-[; ;main.c: 22: _Bool alarmFlag;
-[v _alarmFlag `a ~T0 @X0 1 e ]
-"23
-[; ;main.c: 23: int alarmMin;
-[v _alarmMin `i ~T0 @X0 1 e ]
-"24
-[; ;main.c: 24: int alarmHour;
-[v _alarmHour `i ~T0 @X0 1 e ]
-"25
-[; ;main.c: 25: int alarmLength;
-[v _alarmLength `i ~T0 @X0 1 e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"27
-[; ;main.c: 27: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"28
-[; ;main.c: 28: {
-{
-[e :U _main ]
-[f ]
-"29
-[; ;main.c: 29:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"31
-[; ;main.c: 31:     TRISA3 = 0;
-[e = _TRISA3 -> -> 0 `i `b ]
-"34
-[; ;main.c: 34:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"37
-[; ;main.c: 37:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"44
-[; ;main.c: 44:     PWM3_LoadDutyValue(1);
-[e ( _PWM3_LoadDutyValue (1 -> -> 1 `i `us ]
-"47
-[; ;main.c: 47:     alarmMin = 42;
-[e = _alarmMin -> 42 `i ]
-"48
-[; ;main.c: 48:     alarmHour = 14;
-[e = _alarmHour -> 14 `i ]
-"49
-[; ;main.c: 49:     alarmLength = 1;
-[e = _alarmLength -> 1 `i ]
-"51
-[; ;main.c: 51:     uint16_t increment = 1;
-[v _increment `us ~T0 @X0 1 a ]
-[e = _increment -> -> 1 `i `us ]
-"52
-[; ;main.c: 52:     uint16_t brightness = increment;
-[v _brightness `us ~T0 @X0 1 a ]
-[e = _brightness _increment ]
-"53
-[; ;main.c: 53:     uint16_t maxBrightness = 300;
-[v _maxBrightness `us ~T0 @X0 1 a ]
-[e = _maxBrightness -> -> 300 `i `us ]
-"55
-[; ;main.c: 55:     while (1)
-[e :U 362 ]
-"56
-[; ;main.c: 56:     {
-{
-"59
-[; ;main.c: 59:         int seconds = BIT2SECMIN(i2c_read1ByteRegister(0b1101000, 0x00));
-[v _seconds `i ~T0 @X0 1 a ]
-[e = _seconds ( _BIT2SECMIN (1 ( _i2c_read1ByteRegister (2 , -> -> 104 `i `uc -> -> 0 `i `uc ]
-"60
-[; ;main.c: 60:         int minutes = BIT2SECMIN(i2c_read1ByteRegister(0b1101000, 0x01));
-[v _minutes `i ~T0 @X0 1 a ]
-[e = _minutes ( _BIT2SECMIN (1 ( _i2c_read1ByteRegister (2 , -> -> 104 `i `uc -> -> 1 `i `uc ]
-"61
-[; ;main.c: 61:         int hours = BIT2HOUR(i2c_read1ByteRegister(0b1101000, 0x02));
-[v _hours `i ~T0 @X0 1 a ]
-[e = _hours ( _BIT2HOUR (1 ( _i2c_read1ByteRegister (2 , -> -> 104 `i `uc -> -> 2 `i `uc ]
-"63
-[; ;main.c: 63:         printf("HH:MM:ss %d:%d:%d\r\n", hours, minutes, seconds);
-[e ( _printf , , , (. :s 1C _hours _minutes _seconds ]
+"64 mcc_generated_files/pwm3.c
+[; ;mcc_generated_files/pwm3.c: 64: void PWM3_Initialize(void)
+[v _PWM3_Initialize `(v ~T0 @X0 1 ef ]
 "65
-[; ;main.c: 65:         if(minutes == alarmMin && hours == alarmHour && !alarmFlag){
-[e $ ! && && == _minutes _alarmMin == _hours _alarmHour ! != -> _alarmFlag `i -> 0 `i 364  ]
+[; ;mcc_generated_files/pwm3.c: 65: {
 {
-"66
-[; ;main.c: 66:             alarmFlag = 1;
-[e = _alarmFlag -> -> 1 `i `a ]
-"67
-[; ;main.c: 67:         }
-}
-[e :U 364 ]
+[e :U _PWM3_Initialize ]
+[f ]
 "69
-[; ;main.c: 69:         if(alarmFlag && minutes < alarmMin+alarmLength){
-[e $ ! && != -> _alarmFlag `i -> 0 `i < _minutes + _alarmMin _alarmLength 365  ]
-{
-"70
-[; ;main.c: 70:             PWM3_LoadDutyValue(brightness);
-[e ( _PWM3_LoadDutyValue (1 _brightness ]
+[; ;mcc_generated_files/pwm3.c: 69:  CCP3CON = 0x1C;
+[e = _CCP3CON -> -> 28 `i `uc ]
 "72
-[; ;main.c: 72:             if(brightness <= maxBrightness){
-[e $ ! <= -> _brightness `ui -> _maxBrightness `ui 366  ]
-{
-"73
-[; ;main.c: 73:                 brightness += increment;
-[e =+ _brightness -> _increment `us ]
-"74
-[; ;main.c: 74:                 _delay((unsigned long)((250)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;mcc_generated_files/pwm3.c: 72:  CCPR3L = 0x0C;
+[e = _CCPR3L -> -> 12 `i `uc ]
 "75
-[; ;main.c: 75:             }
-}
-[e :U 366 ]
-"76
-[; ;main.c: 76:         }
-}
-[e :U 365 ]
+[; ;mcc_generated_files/pwm3.c: 75:  CCPR3H = 0x00;
+[e = _CCPR3H -> -> 0 `i `uc ]
 "78
-[; ;main.c: 78:         if(minutes >= alarmMin+alarmLength && alarmFlag){
-[e $ ! && >= _minutes + _alarmMin _alarmLength != -> _alarmFlag `i -> 0 `i 367  ]
-{
-"79
-[; ;main.c: 79:             alarmFlag = 0;
-[e = _alarmFlag -> -> 0 `i `a ]
+[; ;mcc_generated_files/pwm3.c: 78:  CCPTMRS0bits.C3TSEL = 0x0;
+[e = . . _CCPTMRS0bits 1 2 -> -> 0 `i `uc ]
 "80
-[; ;main.c: 80:             PWM3_LoadDutyValue(1);
-[e ( _PWM3_LoadDutyValue (1 -> -> 1 `i `us ]
-"81
-[; ;main.c: 81:         }
+[; ;mcc_generated_files/pwm3.c: 80: }
+[e :UE 354 ]
 }
-[e :U 367 ]
 "82
-[; ;main.c: 82:     }
-}
-[e :U 361 ]
-[e $U 362  ]
-[e :U 363 ]
+[; ;mcc_generated_files/pwm3.c: 82: void PWM3_LoadDutyValue(uint16_t dutyValue)
+[v _PWM3_LoadDutyValue `(v ~T0 @X0 1 ef1`us ]
 "83
-[; ;main.c: 83: }
-[e :UE 360 ]
-}
+[; ;mcc_generated_files/pwm3.c: 83: {
+{
+[e :U _PWM3_LoadDutyValue ]
+"82
+[; ;mcc_generated_files/pwm3.c: 82: void PWM3_LoadDutyValue(uint16_t dutyValue)
+[v _dutyValue `us ~T0 @X0 1 r1 ]
+"83
+[; ;mcc_generated_files/pwm3.c: 83: {
+[f ]
 "85
-[; ;main.c: 85: void ADC2TIME(){
-[v _ADC2TIME `(v ~T0 @X0 1 ef ]
-{
-[e :U _ADC2TIME ]
-[f ]
-"90
-[; ;main.c: 90:     uint16_t potValue = ADC_GetConversion(pot);
-[v _potValue `us ~T0 @X0 1 a ]
-[e = _potValue ( _ADC_GetConversion (1 . `E2893 0 ]
-"92
-[; ;main.c: 92:     int hours = potValue/(9.9*4);
-[v _hours `i ~T0 @X0 1 a ]
-[e = _hours -> / -> -> _potValue `ui `d * .9.9 -> -> 4 `i `d `i ]
-"93
-[; ;main.c: 93:     int min = potValue/(9.9*24)*15;
-[v _min `i ~T0 @X0 1 a ]
-[e = _min -> * / -> -> _potValue `ui `d * .9.9 -> -> 24 `i `d -> -> 15 `i `d `i ]
-"95
-[; ;main.c: 95:     printf("Pot value: %dH%dM\r\n", hours, min);
-[e ( _printf , , (. :s 2C _hours _min ]
-"96
-[; ;main.c: 96: }
-[e :UE 368 ]
+[; ;mcc_generated_files/pwm3.c: 85:     CCPR3L = ((dutyValue & 0x03FC)>>2);
+[e = _CCPR3L -> >> & -> _dutyValue `ui -> -> 1020 `i `ui -> 2 `i `uc ]
+"88
+[; ;mcc_generated_files/pwm3.c: 88:     CCP3CON = ((uint8_t)(CCP3CON & 0xCF) | ((dutyValue & 0x0003)<<4));
+[e = _CCP3CON -> | -> -> & -> _CCP3CON `i -> 207 `i `uc `ui << & -> _dutyValue `ui -> -> 3 `i `ui -> 4 `i `uc ]
+"89
+[; ;mcc_generated_files/pwm3.c: 89: }
+[e :UE 355 ]
 }
-"98
-[; ;main.c: 98: int BIT2SECMIN(uint8_t time){
-[v _BIT2SECMIN `(i ~T0 @X0 1 ef1`uc ]
-{
-[e :U _BIT2SECMIN ]
-[v _time `uc ~T0 @X0 1 r1 ]
-[f ]
-"99
-[; ;main.c: 99:     uint8_t timeReturn = 0;
-[v _timeReturn `uc ~T0 @X0 1 a ]
-[e = _timeReturn -> -> 0 `i `uc ]
-"100
-[; ;main.c: 100:     uint8_t H = time;
-[v _H `uc ~T0 @X0 1 a ]
-[e = _H _time ]
-"102
-[; ;main.c: 102:     H &= 0b01110000;
-[e =& _H -> -> 112 `i `uc ]
-"104
-[; ;main.c: 104:     timeReturn += (H>>4) * 10;
-[e =+ _timeReturn -> * >> -> _H `i -> 4 `i -> 10 `i `uc ]
-"106
-[; ;main.c: 106:     return timeReturn + (time & 0b00001111);
-[e ) + -> _timeReturn `i & -> _time `i -> 15 `i ]
-[e $UE 369  ]
-"107
-[; ;main.c: 107: }
-[e :UE 369 ]
-}
-"109
-[; ;main.c: 109: int BIT2HOUR(uint8_t time){
-[v _BIT2HOUR `(i ~T0 @X0 1 ef1`uc ]
-{
-[e :U _BIT2HOUR ]
-[v _time `uc ~T0 @X0 1 r1 ]
-[f ]
-"110
-[; ;main.c: 110:     uint8_t timeReturn = 0;
-[v _timeReturn `uc ~T0 @X0 1 a ]
-[e = _timeReturn -> -> 0 `i `uc ]
-"111
-[; ;main.c: 111:     uint8_t H = time;
-[v _H `uc ~T0 @X0 1 a ]
-[e = _H _time ]
-"113
-[; ;main.c: 113:     H &= 0b00110000;
-[e =& _H -> -> 48 `i `uc ]
-"115
-[; ;main.c: 115:     timeReturn = (H>>4) * 10;
-[e = _timeReturn -> * >> -> _H `i -> 4 `i -> 10 `i `uc ]
-"117
-[; ;main.c: 117:     return timeReturn + (time & 0b00001111);
-[e ) + -> _timeReturn `i & -> _time `i -> 15 `i ]
-[e $UE 370  ]
-"118
-[; ;main.c: 118: }
-[e :UE 370 ]
-}
-[p f _printf 8388736 ]
-[a 1C 72 72 58 77 77 58 115 115 32 37 100 58 37 100 58 37 100 13 10 0 ]
-[a 2C 80 111 116 32 118 97 108 117 101 58 32 37 100 72 37 100 77 13 10 0 ]

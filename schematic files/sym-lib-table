@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name PIC16F1827)(type Legacy)(uri "C:/Users/kealy/OneDrive/Desktop/my projects/RISE/schematic files/PIC16F1827-I_P.lib")(options "")(descr ""))
+  (lib (name PIC16F1827)(type Legacy)(uri "C:/Users/kealy/OneDrive/Desktop/Projects/RISE/schematic files/PIC16F1827-I_P.lib")(options "")(descr ""))
+  (lib (name RISE-rescue)(type Legacy)(uri ${KIPRJMOD}/RISE-rescue.lib)(options "")(descr ""))
 )
